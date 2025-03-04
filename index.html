@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palm Vets</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="blog.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1><img class="logo" src="images/logo.png" alt="logo">Palm <br>Vet Clinic</h1>
+        <section id="home" class="hero">
+            <h3>Professional Veterinary Care in Westlands, Kikuyu, Wangige, Kabete, Ruaka, Karen, Ngong, Ongata Rongai & Route</h3>
+           <p>Telephone: 0791527103 <br>Email: palmvets@gmail.com</p>
+
+            
+            <a href="#contact" class="btn">Book an Appointment</a>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service-item"><img src="images/grooming.png" alt="pet-grooming">Pet Gromming</div>
+            <div class="service-item"><img src="images/immunization.png" alt="vaccination">Vaccination</div>
+            <div class="service-item"><img src="images/deworm.png" alt="Deworm">Internal & External Parasite control</div>
+            <div class="service-item"><img src="images/poultry.png" alt="poultry">Poultry consultation</div>
+            <div class="service-item"><img src="images/farmvisit.png" alt="farm-visit">Farm-visits</div>
+            <div class="service-item"><img src="images/goat.png" alt="clinical work">Clinical Work</div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <img src="images/daktari.jfif" alt="Veterinarian">
+        <p>Meet Dr. Sam Warui, a passionate and experienced veterinarian dedicated to providing exceptional care for all animals. With years of expertise in animal health, Dr. Sam is committed to helping pet owners and farmers maintain their animals' well-being.</p>
+        <p>If you're looking to improve your animal care knowledge or keep your pets up to date on their vaccinations, explore our <a href="#blog">blog</a> for valuable insights and expert advice.</p>
+    </section>
+
+
+    <section id="blog" class="blog">
+        <h2>Animal Care Blog</h2>
+        <div class="blog-container"></div>
+        <div class="blog-details" style="display:none;">
+            <button id="back-btn">Back to Blog</button>
+            <h2 id="post-title"></h2>
+            <img id="post-image" src="" alt="">
+            <p id="post-content"></p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/your_form_id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 palm vetrenerian Clinic. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@vetclinic" target="_blank"> <img  class="social-logo" src="images/tiktok.jpg" alt="icon"> TikTok</a>
+            <a href="https://www.facebook.com/vetclinic" target="_blank"> <img class="social-logo" src="images/fb.jpg" alt="icon"> Facebook</a>
+            <a href="https://www.instagram.com/vetclinic" target="_blank"> <img class="social-logo" src="images/ig.jpg" alt="icon"> Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
