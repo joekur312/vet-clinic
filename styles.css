@@ -206,29 +206,7 @@ footer {
     padding: 20px;
     margin-top: 20px;
 }
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-}
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #2c5e2e;
-    color: white;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-.blog-post {
-    background: white;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
