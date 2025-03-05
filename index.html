@@ -6,7 +6,15 @@
     <title>Palm Vets</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="blog.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script >window.addEventListener("scroll", function () {
+    const nav = document.querySelector("nav");
+    if (window.scrollY > 100) {
+        nav.classList.add("sticky");
+    } else {
+        nav.classList.remove("sticky");
+    }
+});
+</script>
 </head>
 <body>
     <header>
