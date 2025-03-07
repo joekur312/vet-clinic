@@ -9,27 +9,22 @@ body {
     color: #333;
 }
 header {
-    background-color: #2c5e2e;
+    background-color: #064420;
     color: white;
-    padding: 15px 0;
+    padding: 20px;
     text-align: center;
-    width: 100%;
-    z-index: 999;
 }
-
-nav {
-    width: 100%;
-    background-color: #2c5e2e;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    padding: 10px 0;
-    position: sticky;
-    transition: all 0.3s ease;
+.nav-bar{
+    background-color:#064420 ;
+    text-align: center;
+   padding: 20px;
+   width: 100%;
+   position: sticky;
+   top: 0px;
 }
-
-
-
 nav ul {
-    
+    position: sticky;
+    top: 0px;
     list-style: none;
     padding: 0;
 }
@@ -123,22 +118,79 @@ section {
 .blog-container, .blog-details {
     max-width: 800px;
     margin: auto;
+    padding: 20px;
 }
 
-.blog-post {
-    background: white;
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
+.blog-summary {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
 }
 
-.blog-post img {
-    max-width: 100%;
-    height: auto;
+.blog-image {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
     border-radius: 5px;
 }
+
+#back-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* Blog Post Table Styling */
+.blog-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Table Headers */
+.blog-details table th {
+    background-color: #008000;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Table Cells */
+.blog-details table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Alternate Row Colors */
+.blog-details table tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+/* Add slight shadow for a clean look */
+.blog-details table {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    .blog-details table {
+        font-size: 14px;
+    }
+
+    .blog-details table th, 
+    .blog-details table td {
+        padding: 8px;
+    }
+}
+
 .daktari{
     width: 200;
     height: 300;
@@ -157,19 +209,17 @@ button:hover {
     background: #003300;
 }
 
-.contact form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
+.contact a {
+    
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
-.contact input, .contact textarea {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+
 .social-links {
     display: flex;
     justify-content: center;
@@ -204,10 +254,4 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 20px;
-}
-
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
